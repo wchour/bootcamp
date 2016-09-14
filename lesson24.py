@@ -3,6 +3,7 @@ import scipy.stats
 
 import matplotlib.pyplot as plt
 import seaborn as sns
+import bootcamp_utils
 
 rc = {'lines.linewidth' : 2, 'axes.labelsize' : 18, 'axes.titlesize' : 18}
 sns.set(rc=rc)
