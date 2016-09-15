@@ -37,7 +37,7 @@ x_1975, y_1975 = ecdf(bd_1975)
 
 n_reps = 100
 for i in range(n_reps):
-    x = draw_bs_reps(bd_1975, np.mean, size=1)
+    x = np.random.choice(bd_1975, len(bd_1975))
     xr_1975, yr_1975 = ecdf(x)
     plt.plot(xr_1975, yr_1975, marker='.', linestyle='none', color='blue', alpha=0.01)
     plt.margins(0.02)
